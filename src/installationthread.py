@@ -79,7 +79,7 @@ class InstallationThread(ProcessThread):
             
             self.progress_signal.emit(60)
 
-            tweaks = ['corefonts']
+            tweaks = ['corefonts', 'd3dcompiler_47']
             for tweak in tweaks:
                 self.log_signal.emit(f'[DEBUG] Installing {tweak} with winetricks')
                 self.run_command(['winetricks', '-q', tweak], in_prefix=True)
