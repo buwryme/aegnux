@@ -28,9 +28,9 @@ rm cabextract-1.11-1.x86_64.rpm
 
 # Download Wine
 echo Downloading Wine...
-curl -LO https://github.com/Kron4ek/Wine-Builds/releases/download/11.3/wine-11.3-staging-tkg-amd64-wow64.tar.xz
-mkdir -p ./assets/wine && tar Jxf wine-11.3-staging-tkg-amd64-wow64.tar.xz --strip-components=1 -C ./assets/wine
-rm wine-11.3-staging-tkg-amd64-wow64.tar.xz
+curl -LO https://github.com/Kron4ek/Wine-Builds/releases/download/11.12/wine-11.12-staging-tkg-amd64-wow64.tar.xz
+mkdir -p ./assets/wine && tar Jxf wine-11.12-staging-tkg-amd64-wow64.tar.xz --strip-components=1 -C ./assets/wine
+rm wine-11.12-staging-tkg-amd64-wow64.tar.xz
 
 
 # Download Visual C++ Redistributable Runtimes
@@ -56,8 +56,8 @@ mv gdiplus.dll ./assets/
 
 # Download dxvk
 echo Downloading dxvk...
-curl -LO https://github.com/doitsujin/dxvk/releases/download/v2.7.1/dxvk-2.7.1.tar.gz
-mv dxvk-2.7.1.tar.gz ./assets/dxvk.tar.gz
+curl -LO https://github.com/doitsujin/dxvk/releases/download/v2.7.1/dxvk-3.0.1.tar.gz
+mv dxvk-3.0.1.tar.gz ./assets/dxvk.tar.gz
 
 echo --------------------------------------------
 echo Done!
