@@ -259,16 +259,16 @@ class InstallationThread(ProcessThread):
             self.log_signal.emit('[WARNING] Installation folder not found or matched root path. No folder was deleted.')
 
     def install_nvidia_libs(self):
-        download_url = "https://github.com/SveSop/nvidia-libs/releases/download/v0.8.5/nvidia-libs-v0.8.5.tar.xz"
+        download_url = "https://github.com/SveSop/nvidia-libs/releases/download/v1.0.2/nvidia-libs-v1.0.2.tar.xz"
         nvidia_libs_dir = get_wineprefix_dir().joinpath("nvidia-libs")
         os.makedirs(nvidia_libs_dir, exist_ok=True)
-        tar_file = nvidia_libs_dir.joinpath("nvidia-libs-v0.8.5.tar.xz")
+        tar_file = nvidia_libs_dir.joinpath("nvidia-libs-v1.0.2.tar.xz")
 
         self.download_file_to(download_url, tar_file)
         self.log_signal.emit("[DEBUG] Download completed.")
         self.log_signal.emit("[DEBUG] Extracting NVIDIA libs...")
 
-        extract_dir = nvidia_libs_dir.joinpath("nvidia-libs-v0.8.5")
+        extract_dir = nvidia_libs_dir.joinpath("nvidia-libs-v1.0.2")
 
         self.unpack_tar(tar_file, nvidia_libs_dir)
 
