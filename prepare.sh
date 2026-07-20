@@ -62,7 +62,7 @@ mv gdiplus.dll ./assets/
 
 # Download dxvk
 echo Downloading dxvk...
-curl -LO https://github.com/doitsujin/dxvk/releases/download/v2.7.1/dxvk-3.0.1.tar.gz
+curl -LO https://github.com/doitsujin/dxvk/releases/download/v3.0.1/dxvk-3.0.1.tar.gz
 mv dxvk-3.0.1.tar.gz ./assets/dxvk.tar.gz
 
 echo --------------------------------------------
